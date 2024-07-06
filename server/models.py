@@ -59,4 +59,5 @@ class Review(db.Model, SerializerMixin):
     serialize_rules = ('-item.reviews','-customer.reviews')
 
     def __repr__(self):
+        
         return f'<Review {self.id}, {self.comment}>'
